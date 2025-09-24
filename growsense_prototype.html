@@ -1,0 +1,1657 @@
+            <!-- Recommendations in Grid Layout -->
+        <div id="recommendations" class="recommendations section">
+            <h3 id="rec-title">🌾 Smart Crop Recommendations</h3>
+            <div style="background: #e8f5e8; padding: 15px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #4CAF50;">
+                <strong>🎯 Intelligent Matching:</strong> These recommendations combine your province's climate conditions with your specific soil type for optimal results. Switch between location-based and soil-based suggestions using the controls above!
+            </div>
+            
+            <div class="crops-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px;">
+            <div class="crop-card">
+                <div class="crop-name" id="crop1-name">Sweet Potato - බතල</div>
+                <div class="crop-details" id="crop1-details">
+                    Perfect for red earth soil. Thrives in well-drained, slightly acidic conditions. High yield potential. Rich in nutrients. Good storage crop.
+                </div>
+                <div class="success-rate">94% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 95/kg | Expected ROI: 380%<br>
+                    <span style="color: #8B4513; font-size: 12px; font-weight: normal;">🌾 Red Earth Champion</span>
+                </div>
+            </div>
+
+            <div class="crop-card">
+                <div class="crop-name" id="crop2-name">Cassava - මඤ්ඤොක්කා</div>
+                <div class="crop-details" id="crop2-details">
+                    Excellent for red lateritic soils. Drought-tolerant root crop. Grows in poor soils. Multiple uses - food and industrial. Low maintenance.
+                </div>
+                <div class="success-rate">92% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 65/kg | Expected ROI: 320%<br>
+                    <span style="color: #8B4513; font-size: 12px; font-weight: normal;">🌾 Drought Resistant</span>
+                </div>
+            </div>
+
+            <div class="crop-card">
+                <div class="crop-name" id="crop3-name">Ginger - ඉඟුරු</div>
+                <div class="crop-details" id="crop3-details">
+                    Thrives in well-drained red soil. High-value spice crop. Requires organic matter. Good for hillside cultivation. Export potential.
+                </div>
+                <div class="success-rate">89% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 450/kg | Expected ROI: 520%<br>
+                    <span style="color: #8B4513; font-size: 12px; font-weight: normal;">🌾 High Value Spice</span>
+                </div>
+            </div>
+            </div>
+        </div>        <!-- Market Prices Section -->
+        <div id="market-section" class="section" style="display: none;">
+            <h3 id="market-title">📊 Live Market Prices</h3>
+            <div class="market-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <span style="font-size: 16px; color: #666;" id="last-updated">Last Updated: 2 hours ago</span>
+                <button onclick="refreshPrices()" style="padding: 10px 20px; border: none; background: #4CAF50; color: white; border-radius: 8px; cursor: pointer; font-size: 14px;">🔄 Refresh</button>
+            </div>
+            
+            <div class="price-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <!-- Market Prices Section -->
+        <div id="market-section" class="section" style="display: none;">
+            <h3 id="market-title">📊 Live Market Prices</h3>
+            <div class="market-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <span style="font-size: 16px; color: #666;" id="last-updated">Last Updated: 2 hours ago</span>
+                <button onclick="refreshPrices()" style="padding: 10px 20px; border: none; background: #4CAF50; color: white; border-radius: 8px; cursor: pointer; font-size: 14px;">🔄 Refresh</button>
+            </div>
+            
+            <div class="price-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div class="price-card" style="background: white; padding: 20px; border-radius: 15px; border-left: 6px solid #4CAF50; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: bold; color: #2E7D32; font-size: 18px;">Rice (White - Nadu)</div>
+                            <div style="font-size: 14px; color: #666; margin-top: 5px;">Colombo Wholesale Market</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 28px; font-weight: bold; color: #2E7D32;">Rs. 85</div>
+                            <div style="font-size: 14px; color: #4CAF50; font-weight: bold;">↗ +3.2%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-card" style="background: white; padding: 20px; border-radius: 15px; border-left: 6px solid #FF9800; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: bold; color: #E65100; font-size: 18px;">Green Gram</div>
+                            <div style="font-size: 14px; color: #666; margin-top: 5px;">Manning Market</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 28px; font-weight: bold; color: #E65100;">Rs. 220</div>
+                            <div style="font-size: 14px; color: #F44336; font-weight: bold;">↘ -1.8%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-card" style="background: white; padding: 20px; border-radius: 15px; border-left: 6px solid #2196F3; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: bold; color: #1565C0; font-size: 18px;">Tomatoes (Local)</div>
+                            <div style="font-size: 14px; color: #666; margin-top: 5px;">Dambulla Economic Centre</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 28px; font-weight: bold; color: #1565C0;">Rs. 120</div>
+                            <div style="font-size: 14px; color: #4CAF50; font-weight: bold;">↗ +5.1%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card" style="background: white; padding: 20px; border-radius: 15px; border-left: 6px solid #9C27B0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: bold; color: #7B1FA2; font-size: 18px;">Onions (Big)</div>
+                            <div style="font-size: 14px; color: #666; margin-top: 5px;">Peliyagoda Market</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 28px; font-weight: bold; color: #7B1FA2;">Rs. 180</div>
+                            <div style="font-size: 14px; color: #4CAF50; font-weight: bold;">↗ +2.7%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Farming Tips Section -->
+        <div id="tips-section" class="section" style="display: none;">
+            <h3 id="tips-title">💡 Smart Farming Tips</h3>
+            
+            <div class="tips-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px;">
+                
+                <div class="tips-category">
+                    <h4 style="color: #2E7D32; margin-bottom: 15px; font-size: 20px;" id="weather-tips">🌤️ Weather-Based Tips</h4>
+                    <div class="tip-card" style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 15px; border-left: 6px solid #2196F3; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <div style="font-weight: bold; margin-bottom: 10px; font-size: 16px;" id="tip1-title">High Humidity Alert</div>
+                        <div style="font-size: 14px; color: #666; line-height: 1.5;" id="tip1-content">Current humidity is 75%. Increase ventilation for tomato crops and watch for fungal diseases. Apply organic fungicides if needed.</div>
+                    </div>
+                    <div class="tip-card" style="background: white; padding: 20px; border-radius: 15px; border-left: 6px solid #FF9800; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <div style="font-weight: bold; margin-bottom: 10px; font-size: 16px;" id="tip2-title">Rainfall Preparation</div>
+                        <div style="font-size: 14px; color: #666; line-height: 1.5;" id="tip2-content">5mm rainfall expected today. Ensure proper drainage in rice fields. Cover sensitive vegetables if heavy rain predicted.</div>
+                    </div>
+                </div>
+
+                <div class="tips-category">
+                    <h4 style="color: #2E7D32; margin-bottom: 15px; font-size: 20px;" id="seasonal-tips">🌾 Seasonal Farming Tips</h4>
+                    <div class="tip-card" style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 15px; border-left: 6px solid #4CAF50; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <div style="font-weight: bold; margin-bottom: 10px; font-size: 16px;" id="tip3-title">Maha Season Focus</div>
+                        <div style="font-size: 14px; color: #666; line-height: 1.5;" id="tip3-content">Perfect time for rice cultivation. Ensure seedbeds are ready. Use organic matter to improve soil fertility. Plan irrigation systems.</div>
+                    </div>
+                    
+                    <div class="tip-card" style="background: white; padding: 20px; border-radius: 15px; border-left: 6px solid #795548; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <div style="font-weight: bold; margin-bottom: 10px; font-size: 16px;" id="tip4-title">Red Earth Soil Care</div>
+                        <div style="font-size: 14px; color: #666; line-height: 1.5;" id="tip4-content">Your red earth soil needs organic matter. Add compost or well-rotted manure. Test pH levels - aim for 6.0-7.0 for most crops.</div>
+                    </div>
+                </div>
+
+                <div class="tips-category">
+                    <h4 style="color: #2E7D32; margin-bottom: 15px; font-size: 20px;" id="soil-tips">🌱 Soil Management</h4>
+                    <div class="tip-card" style="background: white; padding: 20px; border-radius: 15px; border-left: 6px solid #607D8B; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <div style="font-weight: bold; margin-bottom: 10px; font-size: 16px;" id="tip5-title">Water Management</div>
+                        <div style="font-size: 14px; color: #666; line-height: 1.5;" id="tip5-content">Install drip irrigation for vegetables. Mulch around plants to retain moisture. Check soil moisture 2-3 inches deep before watering.</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        </div> <!-- End main-content wrapper -->
+    </div>; border-left: 6px solid #4CAF50; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: bold; color: #2E7D32; font-size: 18px;">Rice (White - Nadu)</div>
+                            <div style="font-size: 14px; color: #666; margin-top: 5px;">Colombo Wholesale Market</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 28px; font-weight: bold; color: #2E7D32;">Rs. 85</div>
+                            <div style="font-size: 14px; color: #4CAF50; font-weight: bold;">↗ +3.2%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-card" style="background: white; padding: 20px; border-radius: 15px; border-left: 6px solid #FF9800; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: bold; color: #E65100; font-size: 18px;">Green Gram</div>
+                            <div style="font-size: 14px; color: #666; margin-top: 5px;">Manning Market</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 28px; font-weight: bold; color: #E65100;">Rs. 220</div>
+                            <div style="font-size: 14px; color: #F44336; font-weight: bold;">↘ -1.8%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-card" style="background: white; padding: 20px; border-radius: 15px<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowSense - Smart Crop Recommendations for Sri Lankan Farmers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            min-height: 100vh;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 2px solid #4CAF50;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2E7D32;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            border: 2px solid #4CAF50;
+            background: white;
+            color: #4CAF50;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lang-btn.active {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h3 {
+            color: #2E7D32;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .location-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+            background: #e8f5e8;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .weather-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .weather-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2E7D32;
+        }
+
+        .weather-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .season-indicator {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(45deg, #FF9800, #FF5722);
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .soil-selector {
+            margin-bottom: 15px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        .analyze-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #4CAF50, #2E7D32);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 20px 0;
+        }
+
+        .analyze-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .recommendations {
+            display: none;
+        }
+
+        .crop-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #4CAF50;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .crop-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2E7D32;
+            margin-bottom: 10px;
+        }
+
+        .crop-details {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .success-rate {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .alert {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4CAF50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        .nav-tabs {
+            display: flex;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 10px 5px;
+            border: none;
+            background: transparent;
+            color: #666;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active {
+            background: #4CAF50;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Content Wrapper -->
+        <div class="main-content" style="max-width: 1200px; margin: 0 auto;">
+        
+        <div class="header">
+            <div class="logo">GrowSense</div>
+            <div class="tagline" id="tagline">Smart Crop Recommendations for Sri Lankan Farmers</div>
+        </div>
+
+        <div class="language-selector">
+            <button class="lang-btn active" onclick="setLanguage('en')">English</button>
+            <button class="lang-btn" onclick="setLanguage('si')">සිංහල</button>
+            <button class="lang-btn" onclick="setLanguage('ta')">தமிழ்</button>
+        </div>
+
+        <!-- Dashboard Grid Layout -->
+        <div class="dashboard-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+            
+        <div class="section">
+            <h3 id="location-title">📍 Your Location</h3>
+            <div class="location-info">
+                <span>🌍</span>
+                <div>
+                    <div id="district"><strong>Colombo District</strong><br><small style="color: #888;">Western Province</small></div>
+                    <small id="coordinates">6.9271° N, 79.8612° E</small>
+                </div>
+                <button onclick="getCurrentLocation()" style="margin-left: auto; padding: 8px 12px; border: none; background: #4CAF50; color: white; border-radius: 8px; cursor: pointer; font-size: 14px; transition: all 0.3s;">
+                    📡 Update
+                </button>
+            </div>
+            <div style="margin-top: 15px; padding: 10px; background: #e8f5e8; border-radius: 8px; font-size: 12px; color: #2E7D32;">
+                <strong>📊 Regional Data:</strong> Weather patterns and crop recommendations are customized for your specific district and province.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 id="soil-title">🌱 Soil Information</h3>
+            <div class="soil-selector">
+                <label for="soil-type" id="soil-label">Soil Type:</label>
+                <select id="soil-type" onchange="updateSoilSpecificCrops()">
+                    <option value="red-earth">Red Earth (රතු පස්)</option>
+                    <option value="alluvial">Alluvial Soil (ගංගා පස්)</option>
+                    <option value="laterite">Laterite Soil (ලැටරයිට්)</option>
+                    <option value="regosol">Regosol (රෙගොසෝල්)</option>
+                    <option value="peat">Peat Soil (පීට් පස්)</option>
+                    <option value="coastal-sand">Coastal Sand (වෙරළබඩ වැලි)</option>
+                    <option value="black-cotton">Black Cotton Soil (කළු කපු පස්)</option>
+                </select>
+            </div>
+            <div>
+                <label for="farm-size" id="farm-size-label">Farm Size (acres):</label>
+                <input type="number" id="farm-size" value="2.5" min="0.1" step="0.1">
+            </div>
+            <div id="soil-info" style="margin-top: 15px; padding: 12px; background: #f0f4f8; border-radius: 8px; border-left: 4px solid #795548;">
+                <div style="font-weight: bold; color: #795548; margin-bottom: 5px;">🏔️ Red Earth Soil Characteristics:</div>
+                <div style="font-size: 13px; color: #555; line-height: 1.4;">
+                    Well-drained, iron-rich soil. pH: 5.5-6.5 (slightly acidic). Good for root vegetables, tea, rubber. Requires organic matter addition. Excellent drainage properties.
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+        <div class="section">
+            <h3 id="weather-title">🌤️ Current Weather Conditions</h3>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <div class="weather-value">28°C</div>
+                    <div class="weather-label" id="temp-label">Temperature</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-value">75%</div>
+                    <div class="weather-label" id="humidity-label">Humidity</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-value">5mm</div>
+                    <div class="weather-label" id="rainfall-label">Expected Rainfall</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-value">12km/h</div>
+                    <div class="weather-label" id="wind-label">Wind Speed</div>
+                </div>
+            </div>
+            <div class="season-indicator">
+                <span id="season-text">🌾 Maha Season (October - March)</span>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong id="alert-title">💡 Smart Recommendations:</strong>
+            <span id="alert-text">Get customized crop suggestions based on your province's climate AND your specific soil type. Change location or soil type to see different recommendations!</span>
+        </div>
+
+        <button class="analyze-btn" onclick="analyzeCrops()" id="analyze-btn">
+            🔍 Get Crop Recommendations
+        </button>
+
+        <!-- Navigation Tabs -->
+        <div id="nav-tabs" class="nav-tabs" style="display: none; justify-content: space-around; background: white; padding: 10px; border-radius: 25px; margin: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <button class="tab-btn active" onclick="showSection('recommendations')" id="tab-crops">🌾 Crops</button>
+            <button class="tab-btn" onclick="showSection('calendar')" id="tab-calendar">📅 Calendar</button>
+            <button class="tab-btn" onclick="showSection('market')" id="tab-market">📊 Prices</button>
+            <button class="tab-btn" onclick="showSection('tips')" id="tab-tips">💡 Tips</button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <div id="loading-text">Analyzing soil, weather, and seasonal data...</div>
+        </div>
+
+        <div id="recommendations" class="recommendations section">
+            <h3 id="rec-title">🌾 Recommended Crops for Your Farm</h3>
+            
+            <div class="crop-card">
+                <div class="crop-name" id="crop1-name">Rice (Paddy) - සහල්</div>
+                <div class="crop-details" id="crop1-details">
+                    Perfect for current Maha season conditions. Red earth soil with good drainage. Expected yield: 3-4 tons per acre. Plant within next 2 weeks for optimal results.
+                </div>
+                <div class="success-rate">92% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 85/kg | Expected ROI: 280%
+                </div>
+            </div>
+
+            <div class="crop-card">
+                <div class="crop-name" id="crop2-name">Green Gram - මුං ඇට</div>
+                <div class="crop-details" id="crop2-details">
+                    Excellent alternative crop. Grows well in red earth soil. Short growing period (60-70 days). Good market demand. Nitrogen-fixing properties benefit soil.
+                </div>
+                <div class="success-rate">88% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 220/kg | Expected ROI: 340%
+                </div>
+            </div>
+
+            <div class="crop-card">
+                <div class="crop-name" id="crop3-name">Tomatoes - තක්කාලි</div>
+                <div class="crop-details" id="crop3-details">
+                    High-value crop suitable for current weather. Requires proper water management. Good for commercial farming. Consider greenhouse cultivation for better yields.
+                </div>
+                <div class="success-rate">75% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 120/kg | Expected ROI: 190%
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations in Grid Layout -->
+        <div id="recommendations" class="recommendations section">
+            <h3 id="rec-title">🌾 Province-Specific Crop Recommendations</h3>
+            <div style="background: #e3f2fd; padding: 15px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #2196F3;">
+                <strong>🎯 Regional Specialization:</strong> These crops are specially selected based on your province's unique climate, soil conditions, and agricultural expertise. Some vegetables can only be grown successfully in specific provinces!
+            </div>
+            
+            <div class="crops-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px;">
+            <div class="crop-card">
+                <div class="crop-name" id="crop1-name">Carrot - කැරට්</div>
+                <div class="crop-details" id="crop1-details">
+                    Exclusive to cool highlands (Nuwara Eliya). Temperate climate essential. High market value. Export quality achievable. Plant Sept-Nov for best results.
+                </div>
+                <div class="success-rate">95% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 180/kg | Expected ROI: 420%<br>
+                    <span style="color: #FF6B35; font-size: 12px; font-weight: normal;">🌟 Hill Country Exclusive</span>
+                </div>
+            </div>
+
+            <div class="crop-card">
+                <div class="crop-name" id="crop2-name">Leeks - ලීක්ස්</div>
+                <div class="crop-details" id="crop2-details">
+                    Grows only in Central highlands. Cool climate vegetable. High demand in Colombo hotels. Perfect for Nuwara Eliya district. 90-day growing period.
+                </div>
+                <div class="success-rate">92% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 320/kg | Expected ROI: 380%<br>
+                    <span style="color: #FF6B35; font-size: 12px; font-weight: normal;">🌟 Temperate Zone Only</span>
+                </div>
+            </div>
+
+            <div class="crop-card">
+                <div class="crop-name" id="crop3-name">Cabbage - ගෝවා</div>
+                <div class="crop-details" id="crop3-details">
+                    Thrives in cool hill country. Major crop in Nuwara Eliya, Matale. Cool season variety. Head formation requires 15-20°C. Export potential.
+                </div>
+                <div class="success-rate">88% Success Rate</div>
+                <div class="crop-price" style="margin-top: 10px; color: #2E7D32; font-weight: bold;">
+                    💰 Current Price: Rs. 95/kg | Expected ROI: 290%<br>
+                    <span style="color: #FF6B35; font-size: 12px; font-weight: normal;">🌟 Hill Country Specialty</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Calendar Section with Better Layout -->
+        <div id="calendar-section" class="section" style="display: none;">
+            <h3 id="calendar-title">📅 Planting Calendar</h3>
+            <div class="calendar-container" style="display: grid; grid-template-columns: 1fr 2fr; gap: 20px;">
+                <div class="calendar-grid" style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+                    <div class="calendar-item" style="background: #e8f5e8; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #2E7D32;">Current</div>
+                        <div style="font-size: 16px; color: #666;">Maha Season</div>
+                        <div style="font-size: 14px; margin-top: 5px;">Oct - Mar</div>
+                    </div>
+                    <div class="calendar-item" style="background: #fff3e0; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 24px; font-weight: bold; color: #FF9800;">Next</div>
+                        <div style="font-size: 16px; color: #666;">Yala Season</div>
+                        <div style="font-size: 14px; margin-top: 5px;">Apr - Sep</div>
+                    </div>
+                </div>
+                
+                <div class="timeline" style="background: white; padding: 20px; border-radius: 15px;">
+                    <h4 style="color: #2E7D32; margin-bottom: 15px;" id="planting-schedule">🌱 Optimal Planting Schedule</h4>
+                    <div class="timeline-item" style="border-left: 3px solid #4CAF50; padding-left: 15px; margin-bottom: 15px;">
+                        <div style="font-weight: bold; color: #2E7D32; font-size: 16px;">Rice (Paddy)</div>
+                        <div style="font-size: 14px; color: #666;">Plant: Oct 15 - Nov 30 | Harvest: Feb 15 - Apr 15</div>
+                    </div>
+                    <div class="timeline-item" style="border-left: 3px solid #FF9800; padding-left: 15px; margin-bottom: 15px;">
+                        <div style="font-weight: bold; color: #FF9800; font-size: 16px;">Green Gram</div>
+                        <div style="font-size: 14px; color: #666;">Plant: Nov 1 - Dec 15 | Harvest: Jan 15 - Feb 28</div>
+                    </div>
+                    <div class="timeline-item" style="border-left: 3px solid #2196F3; padding-left: 15px;">
+                        <div style="font-weight: bold; color: #2196F3; font-size: 16px;">Tomatoes</div>
+                        <div style="font-size: 14px; color: #666;">Plant: Oct 1 - Nov 15 | Harvest: Dec 15 - Feb 15</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                tagline: "Smart Crop Recommendations for Sri Lankan Farmers",
+                locationTitle: "📍 Your Location",
+                weatherTitle: "🌤️ Current Weather Conditions",
+                tempLabel: "Temperature",
+                humidityLabel: "Humidity",
+                rainfallLabel: "Expected Rainfall",
+                windLabel: "Wind Speed",
+                seasonText: "🌾 Maha Season (October - March)",
+                soilTitle: "🌱 Soil Information",
+                soilLabel: "Soil Type:",
+                farmSizeLabel: "Farm Size (acres):",
+                alertTitle: "💡 Seasonal Tip:",
+                alertText: "Maha season is ideal for rice cultivation. Consider water availability and drainage systems.",
+                analyzeBtn: "🔍 Get Crop Recommendations",
+                loadingText: "Analyzing soil, weather, and seasonal data...",
+                recTitle: "🌾 Recommended Crops for Your Farm",
+                crop1Name: "Rice (Paddy) - සහල්",
+                crop1Details: "Perfect for current Maha season conditions. Red earth soil with good drainage. Expected yield: 3-4 tons per acre. Plant within next 2 weeks for optimal results.",
+                crop2Name: "Green Gram - මුං ඇට",
+                crop2Details: "Excellent alternative crop. Grows well in red earth soil. Short growing period (60-70 days). Good market demand. Nitrogen-fixing properties benefit soil.",
+                crop3Name: "Tomatoes - තක්කාලි",
+                crop3Details: "High-value crop suitable for current weather. Requires proper water management. Good for commercial farming. Consider greenhouse cultivation for better yields.",
+                tabCrops: "🌾 Crops",
+                tabCalendar: "📅 Calendar", 
+                tabMarket: "📊 Prices",
+                tabTips: "💡 Tips",
+                calendarTitle: "📅 Planting Calendar",
+                marketTitle: "📊 Live Market Prices",
+                tipsTitle: "💡 Smart Farming Tips",
+                plantingSchedule: "🌱 Optimal Planting Schedule",
+                lastUpdated: "Last Updated: 2 hours ago",
+                weatherTips: "🌤️ Weather-Based Tips",
+                seasonalTips: "🌾 Seasonal Farming Tips", 
+                soilTips: "🌱 Soil Management",
+                tip1Title: "High Humidity Alert",
+                tip2Title: "Rainfall Preparation",
+                tip3Title: "Maha Season Focus",
+                tip4Title: "Red Earth Soil Care",
+                tip5Title: "Water Management"
+            },
+            si: {
+                tagline: "ශ්‍රී ලංකාවේ ගොවීන් සඳහා දක්ෂ බෝග නිර්දේශ",
+                locationTitle: "📍 ඔබේ ස්ථානය",
+                weatherTitle: "🌤️ වර්තමාන කාලගුණික තත්ත්වය",
+                tempLabel: "උෂ්ණත්වය",
+                humidityLabel: "ආර්ද්‍රතාව",
+                rainfallLabel: "අපේක්ෂිත වර්ෂාව",
+                windLabel: "සුළං වේගය",
+                seasonText: "🌾 මහ කන්නය (ඔක්තෝබර් - මාර්තු)",
+                soilTitle: "🌱 පස් තොරතුර",
+                soilLabel: "පස් වර්ගය:",
+                farmSizeLabel: "ගොවිතැන් ප්‍රමාණය (අක්කර):",
+                alertTitle: "💡 සෘතුමය උපදෙස්:",
+                alertText: "මහ කන්නය සහල් වගාව සඳහා සුදුසුයි. ජල ලබා ගැනීම සහ ජල බැහැර කිරීමේ පද්ධති ගැන සලකා බලන්න.",
+                analyzeBtn: "🔍 බෝග නිර්දේශ ලබා ගන්න",
+                loadingText: "පස්, කාලගුණය සහ සෘතුමය දත්ත විශ්ලේෂණය කරමින්...",
+                recTitle: "🌾 ඔබේ ගොවිපලට නිර්දේශිත බෝග",
+                crop1Name: "සහල් (වී) - Rice",
+                crop1Details: "වර්තමාන මහ කන්නයේ තත්ත්වයන් සඳහා පරිපූර්ණයි. හොඳ ජල බැහැර කිරීම සහිත රතු පස්. අපේක්ෂිත අස්වැන්න: අක්කරයකට ටොන් 3-4. ප්‍රශස්ත ප්‍රතිඵල සඳහා ඉදිරි සති 2 තුළ සිටුවන්න.",
+                crop2Name: "මුං ඇට - Green Gram",
+                crop2Details: "විශිෂ්ට විකල්ප බෝගයකි. රතු පස්වල හොඳින් වර්ධනය වේ. කෙටි වර්ධන කාලය (දින 60-70). හොඳ වෙළඳපල ඉල්ලුමක් ඇත. නයිට්‍රජන් ස්ථිරකරණ ගුණාංග මගින් පසට ප්‍රයෝජන වේ.",
+                crop3Name: "තක්කාලි - Tomatoes",
+                crop3Details: "වර්තමාන කාලගුණයට සුදුසු ඉහළ වටිනාකම් සහිත බෝගයකි. සුදුසු ජල කළමනාකරණය අවශ්‍ය වේ. වාණිජ ගොවිතැන සඳහා හොඳයි. වඩා හොඳ අස්වැන්නක් සඳහා හරිතාගාර වගාව සලකා බලන්න."
+            },
+            ta: {
+                tagline: "இலங்கை விவசாயிகளுக்கான புத்திசாலித்தனமான பயிர் பரிந்துரைகள்",
+                locationTitle: "📍 உங்கள் இருப்பிடம்",
+                weatherTitle: "🌤️ தற்போதைய வானிலை நிலைமைகள்",
+                tempLabel: "வெப்பநிலை",
+                humidityLabel: "ஈரப்பதம்",
+                rainfallLabel: "எதிர்பார்க்கப்படும் மழை",
+                windLabel: "காற்றின் வேகம்",
+                seasonText: "🌾 மஹா பருவம் (அக்டோபர் - மார்ச்)",
+                soilTitle: "🌱 மண் தகவல்",
+                soilLabel: "மண் வகை:",
+                farmSizeLabel: "பண்ணை அளவு (ஏக்கர்):",
+                alertTitle: "💡 பருவகால உதவிக்குறிப்பு:",
+                alertText: "மஹா பருவம் நெல் சாகுபடிக்கு ஏற்றது. நீர் கிடைப்பு மற்றும் வடிகால் அமைப்புகளைக் கருத்தில் கொள்ளுங்கள்.",
+                analyzeBtn: "🔍 பயிர் பரிந்துரைகளைப் பெறுங்கள்",
+                loadingText: "மண், வானிலை மற்றும் பருவகால தரவுகளை பகுப்பாய்வு செய்கிறது...",
+                recTitle: "🌾 உங்கள் பண்ணைக்கு பரிந்துரைக்கப்பட்ட பயிர்கள்",
+                crop1Name: "அரிசி (நெல்) - Rice",
+                crop1Details: "தற்போதைய மஹா பருவ நிலைமைகளுக்கு சரியானது. நல்ல வடிகாலுடன் சிவப்பு மண். எதிர்பார்க்கப்படும் விளைச்சல்: ஏக்கருக்கு 3-4 டன்கள். சிறந்த முடிவுகளுக்காக அடுத்த 2 வாரங்களுக்குள் நடவு செய்யுங்கள்.",
+                crop2Name: "பச்சை பயறு - Green Gram",
+                crop2Details: "சிறந்த மாற்று பயிர். சிவப்பு மண்ணில் நன்றாக வளரும். குறுகிய வளர்ச்சி காலம் (60-70 நாட்கள்). நல்ல சந்தை தேவை. நைட்ரஜன் நிலைப்படுத்தும் பண்புகள் மண்ணுக்கு நன்மை பயக்கும்.",
+                crop3Name: "தக்காளி - Tomatoes",
+                crop3Details: "தற்போதைய வானிலைக்கு ஏற்ற உயர் மதிப்பு பயிர். சரியான நீர் மேலாண்மை தேவை. வணிக விவசாயத்திற்கு நல்லது. சிறந்த விளைச்சலுக்காக பசுமைக்குடில் சாகுபடியைக் கருத்தில் கொள்ளுங்கள்."
+            }
+        };
+
+        let currentLanguage = 'en';
+
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Update text content
+            const t = translations[lang];
+            Object.keys(t).forEach(key => {
+                const element = document.getElementById(key.replace(/([A-Z])/g, '-$1').toLowerCase());
+                if (element) {
+                    element.textContent = t[key];
+                }
+            });
+        }
+
+        function getCurrentLocation() {
+            const districts = [
+                // Western Province
+                { name: 'Colombo District', coords: '6.9271° N, 79.8612° E', province: 'Western' },
+                { name: 'Gampaha District', coords: '7.0873° N, 80.0143° E', province: 'Western' },
+                { name: 'Kalutara District', coords: '6.5854° N, 80.0423° E', province: 'Western' },
+                
+                // Central Province
+                { name: 'Kandy District', coords: '7.2906° N, 80.6337° E', province: 'Central' },
+                { name: 'Matale District', coords: '7.4675° N, 80.6234° E', province: 'Central' },
+                { name: 'Nuwara Eliya District', coords: '6.9497° N, 80.7891° E', province: 'Central' },
+                
+                // Southern Province
+                { name: 'Galle District', coords: '6.0329° N, 80.2168° E', province: 'Southern' },
+                { name: 'Matara District', coords: '5.9549° N, 80.5550° E', province: 'Southern' },
+                { name: 'Hambantota District', coords: '6.1241° N, 81.1185° E', province: 'Southern' },
+                
+                // Northern Province
+                { name: 'Jaffna District', coords: '9.6615° N, 80.0255° E', province: 'Northern' },
+                { name: 'Kilinochchi District', coords: '9.3964° N, 80.4037° E', province: 'Northern' },
+                { name: 'Mannar District', coords: '8.9810° N, 79.9045° E', province: 'Northern' },
+                { name: 'Vavuniya District', coords: '8.7514° N, 80.4971° E', province: 'Northern' },
+                { name: 'Mullaitivu District', coords: '9.2670° N, 80.8142° E', province: 'Northern' },
+                
+                // Eastern Province
+                { name: 'Trincomalee District', coords: '8.5874° N, 81.2152° E', province: 'Eastern' },
+                { name: 'Batticaloa District', coords: '7.7102° N, 81.6924° E', province: 'Eastern' },
+                { name: 'Ampara District', coords: '7.2971° N, 81.6747° E', province: 'Eastern' },
+                
+                // North Western Province
+                { name: 'Kurunegala District', coords: '7.4863° N, 80.3647° E', province: 'North Western' },
+                { name: 'Puttalam District', coords: '8.0362° N, 79.8283° E', province: 'North Western' },
+                
+                // North Central Province
+                { name: 'Anuradhapura District', coords: '8.3114° N, 80.4037° E', province: 'North Central' },
+                { name: 'Polonnaruwa District', coords: '7.9403° N, 81.0188° E', province: 'North Central' },
+                
+                // Uva Province
+                { name: 'Badulla District', coords: '6.9934° N, 81.0550° E', province: 'Uva' },
+                { name: 'Moneragala District', coords: '6.8781° N, 81.3506° E', province: 'Uva' },
+                
+                // Sabaragamuwa Province
+                { name: 'Ratnapura District', coords: '6.6828° N, 80.3992° E', province: 'Sabaragamuwa' },
+                { name: 'Kegalle District', coords: '7.2513° N, 80.3464° E', province: 'Sabaragamuwa' }
+            ];
+            
+            const randomDistrict = districts[Math.floor(Math.random() * districts.length)];
+            document.getElementById('district').innerHTML = `<strong>${randomDistrict.name}</strong><br><small style="color: #888;">${randomDistrict.province} Province</small>`;
+            document.getElementById('coordinates').textContent = randomDistrict.coords;
+            
+            // Update weather data based on location with regional variations
+            updateWeatherDataForDistrict(randomDistrict);
+        }
+
+        function updateWeatherDataForDistrict(district) {
+            // Different weather patterns based on district and province
+            let temp, humidity, rainfall, wind;
+            
+            switch(district.province) {
+                case 'Central':
+                    // Cooler temperatures in hill country
+                    temp = Math.floor(Math.random() * 8) + 18; // 18-26°C
+                    humidity = Math.floor(Math.random() * 20) + 70; // 70-90%
+                    rainfall = Math.floor(Math.random() * 25) + 5; // 5-30mm
+                    wind = Math.floor(Math.random() * 12) + 8; // 8-20km/h
+                    break;
+                    
+                case 'Northern':
+                    // Drier, hotter climate
+                    temp = Math.floor(Math.random() * 12) + 28; // 28-40°C
+                    humidity = Math.floor(Math.random() * 25) + 45; // 45-70%
+                    rainfall = Math.floor(Math.random() * 8) + 0; // 0-8mm
+                    wind = Math.floor(Math.random() * 18) + 12; // 12-30km/h
+                    break;
+                    
+                case 'Eastern':
+                    // Monsoon influenced
+                    temp = Math.floor(Math.random() * 8) + 26; // 26-34°C
+                    humidity = Math.floor(Math.random() * 25) + 65; // 65-90%
+                    rainfall = Math.floor(Math.random() * 35) + 10; // 10-45mm
+                    wind = Math.floor(Math.random() * 15) + 10; // 10-25km/h
+                    break;
+                    
+                case 'Southern':
+                    // Coastal, high humidity
+                    temp = Math.floor(Math.random() * 6) + 27; // 27-33°C
+                    humidity = Math.floor(Math.random() * 20) + 75; // 75-95%
+                    rainfall = Math.floor(Math.random() * 20) + 8; // 8-28mm
+                    wind = Math.floor(Math.random() * 12) + 8; // 8-20km/h
+                    break;
+                    
+                case 'Western':
+                    // Urban, moderate climate
+                    temp = Math.floor(Math.random() * 8) + 25; // 25-33°C
+                    humidity = Math.floor(Math.random() * 25) + 60; // 60-85%
+                    rainfall = Math.floor(Math.random() * 18) + 2; // 2-20mm
+                    wind = Math.floor(Math.random() * 10) + 5; // 5-15km/h
+                    break;
+                    
+                default:
+                    // Default weather for other provinces
+                    temp = Math.floor(Math.random() * 10) + 25; // 25-35°C
+                    humidity = Math.floor(Math.random() * 30) + 60; // 60-90%
+                    rainfall = Math.floor(Math.random() * 15) + 0; // 0-15mm
+                    wind = Math.floor(Math.random() * 15) + 5; // 5-20km/h
+                    break;
+            }
+            
+            document.querySelector('.weather-grid .weather-item:nth-child(1) .weather-value').textContent = temp + '°C';
+            document.querySelector('.weather-grid .weather-item:nth-child(2) .weather-value').textContent = humidity + '%';
+            document.querySelector('.weather-grid .weather-item:nth-child(3) .weather-value').textContent = rainfall + 'mm';
+            document.querySelector('.weather-grid .weather-item:nth-child(4) .weather-value').textContent = wind + 'km/h';
+            
+            // Update farming tips based on district
+            updateRegionalTips(district);
+        }
+
+        function updateRegionalTips(district) {
+            const tips = {
+                'Central': {
+                    tip1: 'Cool Climate Advisory: Temperature is ideal for temperate vegetables. Consider cabbage, carrots, and leeks.',
+                    tip2: 'Hill Country Alert: Watch for sudden weather changes. Protect crops from strong winds.',
+                    tip3: 'Tea Region Focus: Perfect conditions for tea cultivation. Maintain proper drainage in terraced fields.'
+                },
+                'Northern': {
+                    tip1: 'Dry Zone Alert: Low humidity detected. Increase irrigation frequency and use mulching.',
+                    tip2: 'Hot Weather Advisory: High temperatures expected. Provide shade for sensitive crops.',
+                    tip3: 'Drought Preparation: Water conservation is crucial. Consider drought-resistant varieties.'
+                },
+                'Eastern': {
+                    tip1: 'Monsoon Season: High rainfall expected. Ensure proper field drainage systems.',
+                    tip2: 'Coastal Influence: Salt spray may affect crops. Use windbreaks near coastal areas.',
+                    tip3: 'Wet Zone Farming: Perfect for rice cultivation. Plan water management systems.'
+                },
+                'Southern': {
+                    tip1: 'Coastal Climate: High humidity ideal for spices. Consider cinnamon and pepper cultivation.',
+                    tip2: 'Southwest Monsoon: Heavy rains expected. Protect young plants and ensure drainage.',
+                    tip3: 'Tropical Conditions: Perfect for coconut and rubber. Maintain proper pest management.'
+                },
+                'Western': {
+                    tip1: 'Urban Agriculture: Consider vertical farming and hydroponic systems for limited spaces.',
+                    tip2: 'Moderate Climate: Excellent for year-round vegetable production. Plan succession planting.',
+                    tip3: 'Market Access: Close to Colombo markets. Focus on high-value crops for better profits.'
+                }
+            };
+            
+            const provinceTips = tips[district.province] || tips['Western'];
+            
+            if (document.getElementById('tip1-content')) {
+                document.getElementById('tip1-content').textContent = provinceTips.tip1;
+                document.getElementById('tip2-content').textContent = provinceTips.tip2;
+                document.getElementById('tip3-content').textContent = provinceTips.tip3;
+            }
+
+            // Update crop recommendations based on province
+            updateProvinceSpecificCrops(district);
+        }
+
+        function updateSoilSpecificCrops() {
+            const soilType = document.getElementById('soil-type').value;
+            
+            const soilVegetables = {
+                'red-earth': {
+                    info: {
+                        title: '🏔️ Red Earth Soil Characteristics:',
+                        description: 'Well-drained, iron-rich soil. pH: 5.5-6.5 (slightly acidic). Good for root vegetables, tea, rubber. Requires organic matter addition. Excellent drainage properties.'
+                    },
+                    crops: [
+                        {
+                            name: 'Sweet Potato - බතල',
+                            details: 'Perfect for red earth soil. Thrives in well-drained, slightly acidic conditions. High yield potential. Rich in nutrients. Good storage crop.',
+                            success: '94%',
+                            price: 'Rs. 95/kg',
+                            roi: '380%',
+                            specialty: 'Red Earth Champion'
+                        },
+                        {
+                            name: 'Cassava - මඤ්ඤොක්කා',
+                            details: 'Excellent for red lateritic soils. Drought-tolerant root crop. Grows in poor soils. Multiple uses - food and industrial. Low maintenance.',
+                            success: '92%',
+                            price: 'Rs. 65/kg',
+                            roi: '320%',
+                            specialty: 'Drought Resistant'
+                        },
+                        {
+                            name: 'Ginger - ඉඟුරු',
+                            details: 'Thrives in well-drained red soil. High-value spice crop. Requires organic matter. Good for hillside cultivation. Export potential.',
+                            success: '89%',
+                            price: 'Rs. 450/kg',
+                            roi: '520%',
+                            specialty: 'High Value Spice'
+                        }
+                    ]
+                },
+                'alluvial': {
+                    info: {
+                        title: '🏞️ Alluvial Soil Characteristics:',
+                        description: 'Fertile river deposited soil. pH: 6.0-7.5 (neutral). Rich in nutrients. Excellent water retention. Perfect for cereals and vegetables. High organic content.'
+                    },
+                    crops: [
+                        {
+                            name: 'Rice - වී',
+                            details: 'Ideal crop for alluvial plains. Rich, fertile soil perfect for paddy cultivation. High yield potential. Traditional irrigation suitable.',
+                            success: '97%',
+                            price: 'Rs. 85/kg',
+                            roi: '420%',
+                            specialty: 'Alluvial Specialist'
+                        },
+                        {
+                            name: 'Sugarcane - උක්',
+                            details: 'Perfect for fertile alluvial soils. High sugar content achievable. Long-growing crop. Multiple harvests. Industrial processing available.',
+                            success: '93%',
+                            price: 'Rs. 45/kg',
+                            roi: '380%',
+                            specialty: 'Industrial Crop'
+                        },
+                        {
+                            name: 'Banana - කෙසෙල්',
+                            details: 'Excellent in nutrient-rich alluvial soil. High productivity. Continuous harvest. Multiple varieties. Good market demand.',
+                            success: '91%',
+                            price: 'Rs. 80/kg',
+                            roi: '350%',
+                            specialty: 'High Productivity'
+                        }
+                    ]
+                },
+                'laterite': {
+                    info: {
+                        title: '🧱 Laterite Soil Characteristics:',
+                        description: 'Iron and aluminum rich. pH: 5.0-6.0 (acidic). Poor nutrient retention. Good drainage. Requires heavy fertilization. Suitable for tree crops.'
+                    },
+                    crops: [
+                        {
+                            name: 'Cashew - කාජු',
+                            details: 'Excellent for laterite soils. Drought-tolerant tree crop. Low nutrient requirements. High-value nuts. Export market available.',
+                            success: '90%',
+                            price: 'Rs. 1200/kg',
+                            roi: '580%',
+                            specialty: 'Laterite Adapted'
+                        },
+                        {
+                            name: 'Coconut - පොල්',
+                            details: 'Traditional laterite soil crop. Deep root system. Salt tolerant. Multiple products. Long-term investment crop.',
+                            success: '88%',
+                            price: 'Rs. 50/nut',
+                            roi: '450%',
+                            specialty: 'Tree Crop'
+                        },
+                        {
+                            name: 'Tapioca - මඤ්ඤොක්කා',
+                            details: 'Thrives in poor laterite soil. Extremely hardy crop. Tolerates low fertility. Food security crop. Industrial uses available.',
+                            success: '95%',
+                            price: 'Rs. 60/kg',
+                            roi: '280%',
+                            specialty: 'Hardy Survivor'
+                        }
+                    ]
+                },
+                'regosol': {
+                    info: {
+                        title: '🏜️ Regosol Characteristics:',
+                        description: 'Young, sandy soil. pH: 6.5-7.5 (neutral to alkaline). Good drainage. Low organic matter. Suitable for drought-resistant crops. Quick warming soil.'
+                    },
+                    crops: [
+                        {
+                            name: 'Groundnut - රටකජු',
+                            details: 'Perfect for well-drained regosol. Nitrogen-fixing legume. Drought-tolerant. High protein crop. Good rotation crop.',
+                            success: '91%',
+                            price: 'Rs. 280/kg',
+                            roi: '420%',
+                            specialty: 'Sandy Soil Expert'
+                        },
+                        {
+                            name: 'Sesame - තල',
+                            details: 'Excellent for sandy regosol. Oil seed crop. Very drought-tolerant. Low water requirement. High-value oil production.',
+                            success: '89%',
+                            price: 'Rs. 340/kg',
+                            roi: '480%',
+                            specialty: 'Drought Champion'
+                        },
+                        {
+                            name: 'Millet - කුරක්කන්',
+                            details: 'Traditional grain for sandy soils. Extremely hardy. Nutritious grain. Climate-resilient. Health food market.',
+                            success: '87%',
+                            price: 'Rs. 180/kg',
+                            roi: '320%',
+                            specialty: 'Climate Resilient'
+                        }
+                    ]
+                },
+                'peat': {
+                    info: {
+                        title: '🌿 Peat Soil Characteristics:',
+                        description: 'Organic-rich wetland soil. pH: 4.0-6.0 (very acidic). High water retention. Rich in organic matter. Excellent for specific crops. Requires drainage management.'
+                    },
+                    crops: [
+                        {
+                            name: 'Water Spinach - කංකුන්',
+                            details: 'Perfect for peat soils. Loves wet conditions. Fast-growing leafy green. High in nutrients. Multiple harvests possible.',
+                            success: '96%',
+                            price: 'Rs. 80/kg',
+                            roi: '450%',
+                            specialty: 'Wetland Specialist'
+                        },
+                        {
+                            name: 'Taro - අල',
+                            details: 'Traditional peat soil crop. Wet-loving tuber. High starch content. Cultural importance. Flood-tolerant variety.',
+                            success: '93%',
+                            price: 'Rs. 120/kg',
+                            roi: '380%',
+                            specialty: 'Wetland Tuber'
+                        },
+                        {
+                            name: 'Watercress - වට්ටක්කා කරපිංචා',
+                            details: 'Thrives in wet peat conditions. High-value salad crop. Rich in vitamins. Fast growth. Premium restaurant demand.',
+                            success: '91%',
+                            price: 'Rs. 450/kg',
+                            roi: '520%',
+                            specialty: 'Premium Aquatic'
+                        }
+                    ]
+                },
+                'coastal-sand': {
+                    info: {
+                        title: '🏖️ Coastal Sand Characteristics:',
+                        description: 'Sandy coastal soil. pH: 7.0-8.5 (alkaline). High salinity tolerance needed. Excellent drainage. Salt spray influence. Requires salt-tolerant varieties.'
+                    },
+                    crops: [
+                        {
+                            name: 'Coconut - පොල් (Coastal)',
+                            details: 'Perfect coastal crop. Salt-tolerant variety. Excellent for sandy beaches. Wind-resistant. Traditional coastal farming.',
+                            success: '94%',
+                            price: 'Rs. 50/nut',
+                            roi: '480%',
+                            specialty: 'Salt Tolerant'
+                        },
+                        {
+                            name: 'Sea Asparagus - මුහුදු අස්පරගස්',
+                            details: 'Unique coastal vegetable. Thrives in salty conditions. High-value gourmet crop. Export potential. Very salt-tolerant.',
+                            success: '88%',
+                            price: 'Rs. 850/kg',
+                            roi: '620%',
+                            specialty: 'Gourmet Coastal'
+                        },
+                        {
+                            name: 'Beach Bean - වෙරළ බෝංචි',
+                            details: 'Salt-tolerant legume. Nitrogen-fixing coastal crop. Erosion control benefits. Traditional coastal food. Hardy coastal variety.',
+                            success: '86%',
+                            price: 'Rs. 190/kg',
+                            roi: '350%',
+                            specialty: 'Coastal Hardy'
+                        }
+                    ]
+                },
+                'black-cotton': {
+                    info: {
+                        title: '⚫ Black Cotton Soil Characteristics:',
+                        description: 'Clay-rich black soil. pH: 7.5-8.5 (alkaline). High water retention. Rich in nutrients. Swells when wet. Excellent for cotton and cereals.'
+                    },
+                    crops: [
+                        {
+                            name: 'Cotton - කපු',
+                            details: 'Ideal crop for black cotton soil. Perfect clay content. Traditional cotton growing. Fiber crop. Industrial processing available.',
+                            success: '95%',
+                            price: 'Rs. 120/kg',
+                            roi: '450%',
+                            specialty: 'Cotton Specialist'
+                        },
+                        {
+                            name: 'Sorghum - කෝරළු',
+                            details: 'Excellent for black clay soils. Drought-tolerant grain. Deep root system. Nutritious grain. Climate-resilient crop.',
+                            success: '92%',
+                            price: 'Rs. 95/kg',
+                            roi: '380%',
+                            specialty: 'Clay Adapted'
+                        },
+                        {
+                            name: 'Sunflower - සූර්යකාන්ති',
+                            details: 'Thrives in black cotton soil. Oil seed crop. Alkaline soil tolerant. High oil content. Value-added processing.',
+                            success: '89%',
+                            price: 'Rs. 150/kg',
+                            roi: '420%',
+                            specialty: 'Oil Seed'
+                        }
+                    ]
+                }
+            };
+
+            const selectedSoil = soilVegetables[soilType];
+            
+            // Update soil information display
+            document.getElementById('soil-info').innerHTML = `
+                <div style="font-weight: bold; color: #795548; margin-bottom: 5px;">${selectedSoil.info.title}</div>
+                <div style="font-size: 13px; color: #555; line-height: 1.4;">${selectedSoil.info.description}</div>
+            `;
+
+            // Update crop recommendations based on soil type
+            if (document.getElementById('crop1-name')) {
+                // Update first crop
+                document.getElementById('crop1-name').textContent = selectedSoil.crops[0].name;
+                document.getElementById('crop1-details').textContent = selectedSoil.crops[0].details;
+                document.querySelector('#recommendations .crop-card:nth-child(1) .success-rate').textContent = `${selectedSoil.crops[0].success} Success Rate`;
+                document.querySelector('#recommendations .crop-card:nth-child(1) .crop-price').innerHTML = `💰 Current Price: ${selectedSoil.crops[0].price} | Expected ROI: ${selectedSoil.crops[0].roi}<br><span style="color: #8B4513; font-size: 12px; font-weight: normal;">🌾 ${selectedSoil.crops[0].specialty}</span>`;
+
+                // Update second crop
+                document.getElementById('crop2-name').textContent = selectedSoil.crops[1].name;
+                document.getElementById('crop2-details').textContent = selectedSoil.crops[1].details;
+                document.querySelector('#recommendations .crop-card:nth-child(2) .success-rate').textContent = `${selectedSoil.crops[1].success} Success Rate`;
+                document.querySelector('#recommendations .crop-card:nth-child(2) .crop-price').innerHTML = `💰 Current Price: ${selectedSoil.crops[1].price} | Expected ROI: ${selectedSoil.crops[1].roi}<br><span style="color: #8B4513; font-size: 12px; font-weight: normal;">🌾 ${selectedSoil.crops[1].specialty}</span>`;
+
+                // Update third crop
+                document.getElementById('crop3-name').textContent = selectedSoil.crops[2].name;
+                document.getElementById('crop3-details').textContent = selectedSoil.crops[2].details;
+                document.querySelector('#recommendations .crop-card:nth-child(3) .success-rate').textContent = `${selectedSoil.crops[2].success} Success Rate`;
+                document.querySelector('#recommendations .crop-card:nth-child(3) .crop-price').innerHTML = `💰 Current Price: ${selectedSoil.crops[2].price} | Expected ROI: ${selectedSoil.crops[2].roi}<br><span style="color: #8B4513; font-size: 12px; font-weight: normal;">🌾 ${selectedSoil.crops[2].specialty}</span>`;
+            }
+
+            // Update farming tips based on soil type
+            updateSoilSpecificTips(soilType);
+        }
+
+        function updateSoilSpecificTips(soilType) {
+            const soilTips = {
+                'red-earth': {
+                    tip1: 'Red Earth Management: Add organic compost regularly. This soil drains well but needs organic matter for nutrient retention.',
+                    tip2: 'pH Correction: Test soil pH annually. Add lime if too acidic (below 5.5). Target pH 6.0-6.5 for optimal crop growth.',
+                    tip3: 'Iron-Rich Benefits: Your red earth soil is excellent for root crops. The iron content provides natural color to vegetables.'
+                },
+                'alluvial': {
+                    tip1: 'Fertile Advantage: Your alluvial soil is naturally fertile. Focus on high-value crops to maximize profit potential.',
+                    tip2: 'Water Management: Monitor drainage during monsoons. Alluvial soil can retain too much water in heavy rains.',
+                    tip3: 'Crop Rotation: Practice rotation with legumes to maintain soil nitrogen levels and prevent nutrient depletion.'
+                },
+                'laterite': {
+                    tip1: 'Fertility Boost: Add heavy organic matter and fertilizers. Laterite soils need nutrient supplementation for good yields.',
+                    tip2: 'Tree Crops Focus: Consider long-term tree crops like coconut, cashew. They perform better than annuals in laterite.',
+                    tip3: 'Drainage Benefit: Excellent natural drainage prevents waterlogging. Good for crops sensitive to excess moisture.'
+                },
+                'regosol': {
+                    tip1: 'Sandy Soil Care: Add organic matter to improve water retention. Sandy regosol drains quickly and needs frequent watering.',
+                    tip2: 'Drought Strategy: Choose drought-resistant varieties. Your sandy soil warms quickly but loses moisture fast.',
+                    tip3: 'Nutrient Management: Apply fertilizers frequently but in small amounts. Sandy soil cannot retain nutrients long.'
+                },
+                'peat': {
+                    tip1: 'Acidity Management: Test and adjust pH regularly. Peat soils are very acidic and may need lime application.',
+                    tip2: 'Drainage Control: Install controlled drainage. Peat soils hold too much water but also dry out quickly when drained.',
+                    tip3: 'Organic Advantage: Your peat soil is rich in organic matter. Focus on crops that love acidic, organic conditions.'
+                },
+                'coastal-sand': {
+                    tip1: 'Salt Management: Choose salt-tolerant varieties only. Regular soil flushing may help reduce salinity levels.',
+                    tip2: 'Wind Protection: Install windbreaks to protect crops from salt spray and strong coastal winds.',
+                    tip3: 'Sand Improvement: Add organic compost heavily. Sandy coastal soil needs organic matter for water and nutrient retention.'
+                },
+                'black-cotton': {
+                    tip1: 'Clay Management: Avoid working soil when wet. Black cotton soil becomes very sticky and can damage soil structure.',
+                    tip2: 'Drainage Planning: Install proper drainage systems. Clay soil can become waterlogged during monsoons.',
+                    tip3: 'Alkaline Adaptation: Your soil is naturally alkaline. Choose crops adapted to higher pH levels for best results.'
+                }
+            };
+
+            const tips = soilTips[soilType] || soilTips['red-earth'];
+            
+            if (document.getElementById('tip4-content')) {
+                document.getElementById('tip4-title').textContent = 'Soil-Specific Care';
+                document.getElementById('tip4-content').textContent = tips.tip1;
+                document.getElementById('tip5-title').textContent = 'Management Strategy';
+                document.getElementById('tip5-content').textContent = tips.tip2;
+                
+                // Update the third tip in seasonal section
+                document.getElementById('tip3-title').textContent = 'Soil Advantage';
+                document.getElementById('tip3-content').textContent = tips.tip3;
+            }
+        }
+        function updateProvinceSpecificCrops(district) {
+            const provinceVegetables = {
+                'Central': {
+                    // Hill country temperate vegetables - unique to Central Province
+                    crops: [
+                        {
+                            name: 'Carrot - කැරට්',
+                            details: 'Exclusive to cool highlands (Nuwara Eliya). Temperate climate essential. High market value. Export quality achievable. Plant Sept-Nov for best results.',
+                            success: '95%',
+                            price: 'Rs. 180/kg',
+                            roi: '420%',
+                            specialty: 'Hill Country Exclusive'
+                        },
+                        {
+                            name: 'Leeks - ලීක්ස්',
+                            details: 'Grows only in Central highlands. Cool climate vegetable. High demand in Colombo hotels. Perfect for Nuwara Eliya district. 90-day growing period.',
+                            success: '92%',
+                            price: 'Rs. 320/kg',
+                            roi: '380%',
+                            specialty: 'Temperate Zone Only'
+                        },
+                        {
+                            name: 'Cabbage - ගෝවා',
+                            details: 'Thrives in cool hill country. Major crop in Nuwara Eliya, Matale. Cool season variety. Head formation requires 15-20°C. Export potential.',
+                            success: '88%',
+                            price: 'Rs. 95/kg',
+                            roi: '290%',
+                            specialty: 'Hill Country Specialty'
+                        }
+                    ]
+                },
+                'Northern': {
+                    // Drought-resistant and hot climate vegetables
+                    crops: [
+                        {
+                            name: 'Drumstick - මුරුංගා',
+                            details: 'Excellent for dry zones. Drought-tolerant tree vegetable. Thrives in hot climate. High nutritional value. All parts edible.',
+                            success: '90%',
+                            price: 'Rs. 150/kg',
+                            roi: '350%',
+                            specialty: 'Dry Zone Champion'
+                        },
+                        {
+                            name: 'Winged Bean - දම්බලා',
+                            details: 'Heat-tolerant legume. Nitrogen-fixing properties. Drought-resistant. Grows well in sandy soils. All plant parts edible.',
+                            success: '85%',
+                            price: 'Rs. 280/kg',
+                            roi: '320%',
+                            specialty: 'Arid Climate Adapted'
+                        },
+                        {
+                            name: 'Bitter Gourd - කරවිල',
+                            details: 'Heat-tolerant vine crop. Medicinal properties. Good for dry conditions. High market demand. Pest-resistant variety available.',
+                            success: '82%',
+                            price: 'Rs. 140/kg',
+                            roi: '270%',
+                            specialty: 'Drought Tolerant'
+                        }
+                    ]
+                },
+                'Eastern': {
+                    // Monsoon-adapted and coastal vegetables
+                    crops: [
+                        {
+                            name: 'Water Spinach - කංකුන්',
+                            details: 'Thrives in wet conditions. Perfect for Eastern monsoons. Fast-growing leafy vegetable. Flood-tolerant. High in nutrients.',
+                            success: '94%',
+                            price: 'Rs. 80/kg',
+                            roi: '380%',
+                            specialty: 'Monsoon Specialist'
+                        },
+                        {
+                            name: 'Yam - අල',
+                            details: 'Traditional Eastern crop. Flood-resistant tuber. Long storage life. High carbohydrate content. Suitable for wet soils.',
+                            success: '89%',
+                            price: 'Rs. 120/kg',
+                            roi: '310%',
+                            specialty: 'Flood Tolerant'
+                        },
+                        {
+                            name: 'Ash Plantain - අමු කෙසෙල්',
+                            details: 'Coastal variety plantain. Salt-tolerant. Excellent for Eastern coastal areas. High yield potential. Multiple harvests.',
+                            success: '91%',
+                            price: 'Rs. 75/kg',
+                            roi: '290%',
+                            specialty: 'Coastal Adapted'
+                        }
+                    ]
+                },
+                'Southern': {
+                    // Spice and tropical specialty crops
+                    crops: [
+                        {
+                            name: 'Cinnamon - කුරුඳු',
+                            details: 'Southern Province specialty. High humidity requirement. Export crop. Premium quality achievable. Traditional cultivation expertise.',
+                            success: '93%',
+                            price: 'Rs. 1200/kg',
+                            roi: '580%',
+                            specialty: 'Export Quality Spice'
+                        },
+                        {
+                            name: 'Black Pepper - ගම්මිරිස්',
+                            details: 'Climbing spice vine. Perfect for Southern wet zones. High value spice. International demand. Requires support structures.',
+                            success: '87%',
+                            price: 'Rs. 800/kg',
+                            roi: '520%',
+                            specialty: 'Premium Spice'
+                        },
+                        {
+                            name: 'Curry Leaves - කරපිංචා',
+                            details: 'Aromatic herb tree. Thrives in tropical climate. Continuous harvest. High local demand. Easy maintenance.',
+                            success: '96%',
+                            price: 'Rs. 200/bunch',
+                            roi: '450%',
+                            specialty: 'Tropical Herb'
+                        }
+                    ]
+                },
+                'Western': {
+                    // Market-oriented and urban farming crops
+                    crops: [
+                        {
+                            name: 'Lettuce - සලාද කොළ',
+                            details: 'Perfect for urban farming. High market demand in Colombo. Hydroponic suitable. Quick turnaround. Premium restaurant crop.',
+                            success: '91%',
+                            price: 'Rs. 250/kg',
+                            roi: '410%',
+                            specialty: 'Urban Farming Ideal'
+                        },
+                        {
+                            name: 'Bell Pepper - කැප්සිකම්',
+                            details: 'High-value vegetable. Excellent for controlled farming. Hotel demand. Greenhouse suitable. Multiple colors available.',
+                            success: '86%',
+                            price: 'Rs. 380/kg',
+                            roi: '360%',
+                            specialty: 'Premium Market Crop'
+                        },
+                        {
+                            name: 'Cherry Tomato - චෙරි තක්කාලි',
+                            details: 'Boutique vegetable. High-end market crop. Perfect for vertical farming. Continuous harvest. Export potential.',
+                            success: '88%',
+                            price: 'Rs. 450/kg',
+                            roi: '390%',
+                            specialty: 'Boutique Vegetable'
+                        }
+                    ]
+                },
+                'North Western': {
+                    // Coconut triangle and mixed farming crops
+                    crops: [
+                        {
+                            name: 'Coconut - පොල්',
+                            details: 'Traditional coconut triangle crop. Multiple products. Long-term investment. Intercropping possible. Established markets.',
+                            success: '94%',
+                            price: 'Rs. 50/nut',
+                            roi: '480%',
+                            specialty: 'Coconut Triangle'
+                        },
+                        {
+                            name: 'Pumpkin - වට්ටක්කා',
+                            details: 'Intercrop with coconut. Ground cover benefits. Long storage life. Multiple uses. Traditional farming knowledge.',
+                            success: '89%',
+                            price: 'Rs. 85/kg',
+                            roi: '320%',
+                            specialty: 'Intercropping Champion'
+                        },
+                        {
+                            name: 'Green Gram - මුං ඇට',
+                            details: 'Nitrogen-fixing legume. Short-season crop. Drought-tolerant. Good rotation crop. High protein content.',
+                            success: '92%',
+                            price: 'Rs. 220/kg',
+                            roi: '340%',
+                            specialty: 'Rotation Crop'
+                        }
+                    ]
+                },
+                'North Central': {
+                    // Ancient agricultural zone crops
+                    crops: [
+                        {
+                            name: 'Rice - වී (Traditional)',
+                            details: 'Ancient irrigation systems suitable. Traditional varieties. Cultural heritage crop. Tank irrigation perfect. Export potential.',
+                            success: '96%',
+                            price: 'Rs. 85/kg',
+                            roi: '380%',
+                            specialty: 'Heritage Varieties'
+                        },
+                        {
+                            name: 'Sesame - තල',
+                            details: 'Traditional dry zone crop. Oil seed. Drought-resistant. Ancient cultivation methods. Value-added processing.',
+                            success: '88%',
+                            price: 'Rs. 340/kg',
+                            roi: '420%',
+                            specialty: 'Ancient Oilseed'
+                        },
+                        {
+                            name: 'Finger Millet - කුරක්කන්',
+                            details: 'Traditional grain crop. Highly nutritious. Drought-tolerant. Cultural importance. Health food market.',
+                            success: '85%',
+                            price: 'Rs. 180/kg',
+                            roi: '290%',
+                            specialty: 'Nutritious Grain'
+                        }
+                    ]
+                },
+                'Uva': {
+                    // Highland tea and vegetable integration
+                    crops: [
+                        {
+                            name: 'Tea - තේ',
+                            details: 'High-grown Ceylon tea. Premium quality. Ideal elevation. Export market established. Estate cultivation.',
+                            success: '97%',
+                            price: 'Rs. 450/kg',
+                            roi: '520%',
+                            specialty: 'Premium Ceylon Tea'
+                        },
+                        {
+                            name: 'Potato - අල',
+                            details: 'Hill country variety. Cool climate requirement. Good storage crop. Seed potato production. Inter-cropping with tea.',
+                            success: '90%',
+                            price: 'Rs. 130/kg',
+                            roi: '310%',
+                            specialty: 'Hill Country Tuber'
+                        },
+                        {
+                            name: 'Beetroot - බීට්ට්රූට්',
+                            details: 'Temperate root vegetable. Cool climate essential. High nutritional value. Export quality achievable. Colorful variety.',
+                            success: '87%',
+                            price: 'Rs. 160/kg',
+                            roi: '340%',
+                            specialty: 'Cool Climate Root'
+                        }
+                    ]
+                },
+                'Sabaragamuwa': {
+                    // Gem mining area agriculture
+                    crops: [
+                        {
+                            name: 'Rubber - රබර්',
+                            details: 'Traditional plantation crop. Latex production. Sustainable farming. Carbon sequestration. Multiple products.',
+                            success: '92%',
+                            price: 'Rs. 280/kg (latex)',
+                            roi: '450%',
+                            specialty: 'Industrial Crop'
+                        },
+                        {
+                            name: 'Cardamom - එනසාල',
+                            details: 'Shade-grown spice. High-value crop. Suitable for forest gardens. Export quality. Traditional knowledge.',
+                            success: '89%',
+                            price: 'Rs. 2200/kg',
+                            roi: '680%',
+                            specialty: 'Premium Spice'
+                        },
+                        {
+                            name: 'Nutmeg - සාදික්කා',
+                            details: 'Tree spice. Long-term investment. Multiple harvests annually. High-value export crop. Medicinal properties.',
+                            success: '86%',
+                            price: 'Rs. 1800/kg',
+                            roi: '590%',
+                            specialty: 'Exotic Spice'
+                        }
+                    ]
+                }
+            };
+
+            // Note: Soil-specific recommendations will override province recommendations
+            // This allows users to get either location-based OR soil-based suggestions
+            const currentProvince = district.province;
+            const crops = provinceVegetables[currentProvince] || provinceVegetables['Western'];
+
+            // Only update if soil-specific crops haven't been selected
+            const soilType = document.getElementById('soil-type').value;
+            if (soilType === 'red-earth') { // Only update for default soil type
+                // Update crop recommendations in the UI
+                if (document.getElementById('crop1-name')) {
+                    document.getElementById('crop1-name').textContent = crops.crops[0].name;
+                    document.getElementById('crop1-details').textContent = crops.crops[0].details;
+                    document.querySelector('#recommendations .crop-card:nth-child(1) .success-rate').textContent = `${crops.crops[0].success} Success Rate`;
+                    document.querySelector('#recommendations .crop-card:nth-child(1) .crop-price').innerHTML = `💰 Current Price: ${crops.crops[0].price} | Expected ROI: ${crops.crops[0].roi}<br><span style="color: #FF6B35; font-size: 12px; font-weight: normal;">🌟 ${crops.crops[0].specialty}</span>`;
+
+                    document.getElementById('crop2-name').textContent = crops.crops[1].name;
+                    document.getElementById('crop2-details').textContent = crops.crops[1].details;
+                    document.querySelector('#recommendations .crop-card:nth-child(2) .success-rate').textContent = `${crops.crops[1].success} Success Rate`;
+                    document.querySelector('#recommendations .crop-card:nth-child(2) .crop-price').innerHTML = `💰 Current Price: ${crops.crops[1].price} | Expected ROI: ${crops.crops[1].roi}<br><span style="color: #FF6B35; font-size: 12px; font-weight: normal;">🌟 ${crops.crops[1].specialty}</span>`;
+
+                    document.getElementById('crop3-name').textContent = crops.crops[2].name;
+                    document.getElementById('crop3-details').textContent = crops.crops[2].details;
+                    document.querySelector('#recommendations .crop-card:nth-child(3) .success-rate').textContent = `${crops.crops[2].success} Success Rate`;
+                    document.querySelector('#recommendations .crop-card:nth-child(3) .crop-price').innerHTML = `💰 Current Price: ${crops.crops[2].price} | Expected ROI: ${crops.crops[2].roi}<br><span style="color: #FF6B35; font-size: 12px; font-weight: normal;">🌟 ${crops.crops[2].specialty}</span>`;
+                }
+            }
+        }
+
+        function analyzeCrops() {
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('recommendations').style.display = 'none';
+            document.getElementById('nav-tabs').style.display = 'none';
+            
+            // Simulate API call
+            setTimeout(() => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('recommendations').style.display = 'block';
+                document.getElementById('nav-tabs').style.display = 'flex';
+                
+                // Show recommendations section by default
+                showSection('recommendations');
+                
+                // Scroll to recommendations
+                document.getElementById('recommendations').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            }, 3000);
+        }
+
+        function showSection(sectionName) {
+            // Hide all sections
+            document.getElementById('recommendations').style.display = 'none';
+            document.getElementById('calendar-section').style.display = 'none';
+            document.getElementById('market-section').style.display = 'none';
+            document.getElementById('tips-section').style.display = 'none';
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected section and activate tab
+            switch(sectionName) {
+                case 'recommendations':
+                    document.getElementById('recommendations').style.display = 'block';
+                    document.getElementById('tab-crops').classList.add('active');
+                    break;
+                case 'calendar':
+                    document.getElementById('calendar-section').style.display = 'block';
+                    document.getElementById('tab-calendar').classList.add('active');
+                    break;
+                case 'market':
+                    document.getElementById('market-section').style.display = 'block';
+                    document.getElementById('tab-market').classList.add('active');
+                    break;
+                case 'tips':
+                    document.getElementById('tips-section').style.display = 'block';
+                    document.getElementById('tab-tips').classList.add('active');
+                    break;
+            }
+        }
+
+        function refreshPrices() {
+            // Simulate price refresh
+            const priceElements = document.querySelectorAll('.price-card');
+            priceElements.forEach(card => {
+                card.style.opacity = '0.5';
+            });
+            
+            setTimeout(() => {
+                // Update prices with random fluctuations
+                const prices = [85, 220, 120, 180];
+                const newPrices = prices.map(price => 
+                    Math.floor(price + (Math.random() - 0.5) * 20)
+                );
+                
+                const priceDisplays = document.querySelectorAll('.price-card div[style*="font-size: 20px"]');
+                priceDisplays.forEach((display, index) => {
+                    display.textContent = `Rs. ${newPrices[index]}`;
+                });
+                
+                document.getElementById('last-updated').textContent = 'Last Updated: Just now';
+                
+                priceElements.forEach(card => {
+                    card.style.opacity = '1';
+                });
+            }, 1000);
+        }
+
+        // Initialize with some dynamic data
+        getCurrentLocation();
+        
+        // Update weather data every 30 seconds to simulate real-time updates
+        setInterval(() => {
+            // Get current district info to maintain regional weather patterns
+            const districtText = document.getElementById('district').innerHTML;
+            if (districtText.includes('Central')) {
+                updateWeatherDataForDistrict({province: 'Central'});
+            } else if (districtText.includes('Northern')) {
+                updateWeatherDataForDistrict({province: 'Northern'});
+            } else if (districtText.includes('Eastern')) {
+                updateWeatherDataForDistrict({province: 'Eastern'});
+            } else if (districtText.includes('Southern')) {
+                updateWeatherDataForDistrict({province: 'Southern'});
+            } else if (districtText.includes('Western')) {
+                updateWeatherDataForDistrict({province: 'Western'});
+            } else {
+                updateWeatherDataForDistrict({province: 'Other'});
+            }
+        }, 30000);
+    </script>
+</body>
+</html>
